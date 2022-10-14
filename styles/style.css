@@ -1,17 +1,19 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "PT sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/pt-sans-v17-latin_cyrillic-regular.woff2") format("woff2");
+  src: url("../fonts/pt-sans-v17-latin_cyrillic-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "PT sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/pt-sans-v17-latin_cyrillic-700.woff2") format("woff2");
+  src: url("../fonts/pt-sans-v17-latin_cyrillic-700.woff2") format("woff");
 }
 
 @font-face {
