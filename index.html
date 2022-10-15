@@ -236,6 +236,242 @@
           <a class="banner__button" href="#">Бесплатно</a>
         </div>
       </div>
+      <section class="container products">
+        <h2 class="products__title">
+          Перфораторы
+        </h2>
+        <div class="blocks__container">
+          <div class="filters__wrapper">
+            <form class="filters__form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="filter__group">
+                <legend class="filter__title">Цена</legend>
+                <div class="price__range__scale">
+                  <div class="price__range__bar">
+                    <button class="button__range button__range__min" type="button">
+                      <span class="visually__hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="button__range button__range__max" type="button">
+                      <span class="visually__hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="price__selectors">
+                  <input class="price__input price__input__min" name="price-from" type="text" value="" placeholder="0"
+                    aria-label="Цена от.">
+                  <span> - </span>
+                  <input class="price__input price__input__max" name="price-to" type="text" value="" placeholder="30000"
+                    aria-label="Цена до.">
+                </div>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Производители</legend>
+                <ul class="filters__list">
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="checkbox" name="manufacturer" value="BOSCH" checked>
+                      <span class="control__mark control__mark__checkbox"></span>
+                      BOSCH
+                    </label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="checkbox" name="manufacturer" value="ИНТЕРСКОЛ">
+                      <span class="control__mark control__mark__checkbox"></span>
+                      ИНТЕРСКОЛ
+                    </label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="checkbox" name="manufacturer" value="MAKIta" checked>
+                      <span class="control__mark control__mark__checkbox"></span>
+                      MAKIta
+                    </label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="checkbox" name="manufacturer" value="Dewalt">
+                      <span class="control__mark control__mark__checkbox"></span>
+                      Dewalt
+                    </label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="checkbox" name="manufacturer" value="Hitachi">
+                      <span class="control__mark control__mark__checkbox"></span>
+                      Hitachi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Питание</legend>
+                <ul class="filters__list">
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="radio" name="power-supply" value="battery" checked>
+                      <span class="control__mark control__mark__radio"></span>
+                      Аккумуляторные
+                    </label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label class="control__label">
+                      <input class="control__input" type="radio" name="power-supply" value="mains-power">
+                      <span class="control__mark control__mark__radio"></span>
+                      Сетевые
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filters-button page-button" type="submit">Показать</button>
+            </form>
+          </div>
+          <div class="products__wrapper">
+            <select class="sorting" name="sorting">
+              <option value="more-expensive">Сначала дорогие</option>
+              <option value="cheaper">Сначала дешевые</option>
+              <option value="novelties">Новинки</option>
+            </select>
+            <ul class="products__list">
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-1.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
+                </a>
+                <span class="product__price__prev">22500 &#8381;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  15500 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-2.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
+                </a>
+                <span class="product__price__prev">30500 &#8381;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  25500 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-3.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
+                </a>
+                <span class="product__price__prev">&nbsp;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  25500 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-4.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
+                </a>
+                <span class="product__price__prev">22500 &#8381;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  1550 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-5.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
+                </a>
+                <span class="product__price__prev">&nbsp;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  25500 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-6.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
+                </a>
+                <span class="product__price__prev">&nbsp;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  25500 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-7.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
+                </a>
+                <span class="product__price__prev">22500 &#8381;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  1550 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-8.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
+                </a>
+                <span class="product__price__prev">30500 &#8381;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  25500 &#8381;
+                </a>
+              </li>
+              <li class="product">
+                <a class="product__link" href="#">
+                  <img class="product__image" src="./images/content-images/perforator-9.png" alt="Перфоратор BOSCH."
+                    width="216" height="180">
+                  <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
+                </a>
+                <span class="product__price__prev">&nbsp;</span>
+                <a class="product__price__actualy" href="#">
+                  <span class="visually__hidden">Добавить в корзину</span>
+                  25500 &#8381;
+                </a>
+              </li>
+            </ul>
+            <div class="more__products__container">
+              <div class="products__pagination">
+                <button class="pagination__button backward__button" type="button">
+                  <span class="visually__hidden">Назад</span>
+                </button>
+                <button class="pagination__button forward__button" type="button">
+                  <span class="visually__hidden">Вперёд</span>
+                </button>
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <span class="pagination__link pagination__current">3</span>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">5</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="main__button more__products__button" href="#">Показать еще</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="services">
         <div class="container">
           <h2 class="services__title">Сервисы</h2>
@@ -268,101 +504,6 @@
             </article>
           </div>
         </div>
-      </section>
-      <section class="popular__products">
-        <h2 class="popular__products__title">
-          Попробуйте самые популярные вкусы нашего мороженого
-        </h2>
-        <ul class="products__list">
-          <li class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="./images/content-images/raspberry.jpg" alt="Шарик малинового мороженого."
-                width="168" height="168">
-              <h3 class="product__title">Малинка</h3>
-              <p class="product__description">
-                Сливочное мороженое с малиновым джемом
-              </p>
-            </a>
-            <div class="price__container">
-              <span class="product__price">310 &#8381;/кг</span>
-              <a class="add__cart__link" href="#">
-                <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Иконка корзины покупок.">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
-                    fill="currentColor" />
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="./images/content-images/pistachio.jpg"
-                alt="Шарик фисташкового мороженого." width="168" height="168">
-              <h3 class="product__title">Фисташка</h3>
-              <p class="product__description">
-                Фисташковый пломбир с кусочками шоколада
-              </p>
-            </a>
-            <div class="price__container">
-              <span class="product__price">340 &#8381;/кг</span>
-              <a class="add__cart__link" href="#">
-                <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Иконка корзины покупок.">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
-                    fill="currentColor" />
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="./images/content-images/blueberry.jpg" alt="Шарик черничного мороженого."
-                width="168" height="168">
-              <h3 class="product__title">Черника</h3>
-              <p class="product__description">
-                Крем-брюле с&nbsp;черничным джемом
-              </p>
-            </a>
-            <div class="price__container">
-              <span class="product__price">330 &#8381;/кг</span>
-              <a class="add__cart__link" href="#">
-                <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Иконка корзины покупок.">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
-                    fill="currentColor" />
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="./images/content-images/bubble-gum.jpg" alt="Шарик мороженого Бабл-гам."
-                width="168" height="168">
-              <h3 class="product__title">Бабл-гам</h3>
-              <p class="product__description">
-                Ванильный пломбир со&nbsp;сладкой посыпкой
-              </p>
-            </a>
-            <div class="price__container">
-              <span class="product__price">320 &#8381;/кг</span>
-              <a class="add__cart__link" href="#">
-                <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Иконка корзины покупок.">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
-                    fill="currentColor" />
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
       </section>
       <div class="container sections__wrapper">
         <section class="about">
