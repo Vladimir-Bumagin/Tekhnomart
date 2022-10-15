@@ -1296,55 +1296,75 @@ body {
   bottom: 0;
 }
 
-/* Секция gifts */
+/* Секция services */
 
-.gifts {
-  margin-bottom: 81px;
-  display: grid;
-  grid-template-columns: repeat(2, 570px);
-  gap: 30px;
-  justify-items: center;
+.services {
+  background-color: rgb(244, 248, 249);
+  background-image: url("../images/decoration-images/services-background.png");
+  padding: 52px 0;
+  margin-bottom: 52px;
 }
 
-.gifts__title {
-  grid-column: 1/-1;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  max-width: 434px;
-  color: #2d3440;
-  text-align: center;
-  margin: 0 0 25px;
-}
-
-.gifts__article {
-  position: relative;
-  background-color: #ff7799;
-  border-radius: 16px;
-  padding: 36px 206px 36px 36px;
-}
-
-.article__content {
+.services .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  height: 100%;
+  align-items: center;
+}
+
+.services__title {
+  margin: 0 0 30px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  max-width: 430px;
+}
+
+.services__subtitle {
+  margin: 0 0 65px;
+  max-width: 556px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
+}
+
+.services__article {
+  background-color: #ffffff;
+  padding: 167px 44px 43px 26px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: left 24px top 31px;
+}
+
+.article__delivery {
+  background-image: url("../images/icons/delivery-red.svg");
+}
+
+.article__warranty {
+  background-image: url("../images/icons/warranty-red.svg");
+}
+
+.article__credit {
+  background-image: url("../images/icons/credit-red.svg");
 }
 
 .article__title {
-  margin: 0 0 28px;
+  margin: 0 0 21px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #2d3440;
+  color: #32425c;
 }
 
 .article__description {
-  margin: 0 0 28px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #2d3440;
+  margin: 0;
+  color: #000000;
 }
 
 .article__link {
