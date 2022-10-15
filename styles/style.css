@@ -1458,10 +1458,6 @@ body {
   color: #293449;
 }
 
-.product__link:hover .product__image {
-  scale: 1.05;
-}
-
 .product__title {
   font-weight: 700;
   font-size: 20px;
@@ -1471,8 +1467,6 @@ body {
 }
 
 .product__image {
-  transform: scale(1);
-  transition: scale 0.6s;
   display: block;
   object-fit: cover;
   margin-bottom: 14px;
