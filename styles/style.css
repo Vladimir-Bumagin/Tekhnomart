@@ -1409,11 +1409,12 @@ body {
 .products__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 34px;
 }
 
 .sorting {
-  max-width: 280px;
+  width: 280px;
   border: 1px solid #3d546f;
   padding: 8px 20px 8px 16px;
   border-radius: 2px;
@@ -1424,7 +1425,7 @@ body {
   background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
-  transform: translateY(-50%);
+  align-self: start;
 }
 
 .products__list {
@@ -1519,15 +1520,6 @@ body {
   transform: rotate(45deg);
 }
 
-.more__products__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: start;
-  margin-bottom: 81px;
-  max-width: 682px;
-}
-
 .more__products__button {
   max-width: 203px;
   min-width: 179px;
@@ -1535,8 +1527,6 @@ body {
 }
 
 .products__pagination {
-  position: relative;
-  margin-left: auto;
   padding: 10px 24px;
   display: flex;
   align-items: center;
@@ -1544,12 +1534,13 @@ body {
 
 .pagination__list {
   padding: 0;
-  margin: 0;
+  margin: 0 17px 0 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  gap: 8px;
   justify-items: center;
-  max-width: 200px;
+  max-width: 348px;
 }
 
 .pagination__link {
@@ -1559,10 +1550,11 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
-  color: #2d3440;
-  min-width: 24px;
-  height: 24px;
-  border-radius: 24px;
+  color: #ffffff;
+  min-width: 50px;
+  height: 45px;
+  border-radius: 2px;
+  background-color: #3d546f;
 }
 
 .pagination__link:hover {
@@ -1582,8 +1574,9 @@ body {
 }
 
 .pagination__current {
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   pointer-events: none;
+  color: #3d546f;
 }
 
 /* Секция About */
