@@ -241,10 +241,10 @@
           Перфораторы
         </h2>
         <div class="blocks__container">
-          <div class="filters__wrapper">
-            <form class="filters__form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="filter__group">
-                <legend class="filter__title">Цена</legend>
+          <form class="filters__form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="filter__group filter__group__price">
+              <legend class="filter__title filter__title__price">Цена</legend>
+              <div class="price__range__wrapper">
                 <div class="price__range__scale">
                   <div class="price__range__bar">
                     <button class="button__range button__range__min" type="button">
@@ -255,76 +255,76 @@
                     </button>
                   </div>
                 </div>
-                <div class="price__selectors">
-                  <input class="price__input price__input__min" name="price-from" type="text" value="" placeholder="0"
-                    aria-label="Цена от.">
-                  <span> - </span>
-                  <input class="price__input price__input__max" name="price-to" type="text" value="" placeholder="30000"
-                    aria-label="Цена до.">
-                </div>
-              </fieldset>
-              <fieldset class="filter__group">
-                <legend class="filter__title">Производители</legend>
-                <ul class="filters__list">
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="checkbox" name="manufacturer" value="BOSCH" checked>
-                      <span class="control__mark control__mark__checkbox"></span>
-                      BOSCH
-                    </label>
-                  </li>
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="checkbox" name="manufacturer" value="ИНТЕРСКОЛ">
-                      <span class="control__mark control__mark__checkbox"></span>
-                      ИНТЕРСКОЛ
-                    </label>
-                  </li>
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="checkbox" name="manufacturer" value="MAKIta" checked>
-                      <span class="control__mark control__mark__checkbox"></span>
-                      MAKIta
-                    </label>
-                  </li>
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="checkbox" name="manufacturer" value="Dewalt">
-                      <span class="control__mark control__mark__checkbox"></span>
-                      Dewalt
-                    </label>
-                  </li>
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="checkbox" name="manufacturer" value="Hitachi">
-                      <span class="control__mark control__mark__checkbox"></span>
-                      Hitachi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="filter__group">
-                <legend class="filter__title">Питание</legend>
-                <ul class="filters__list">
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="radio" name="power-supply" value="battery" checked>
-                      <span class="control__mark control__mark__radio"></span>
-                      Аккумуляторные
-                    </label>
-                  </li>
-                  <li class="filters__list__item">
-                    <label class="control__label">
-                      <input class="control__input" type="radio" name="power-supply" value="mains-power">
-                      <span class="control__mark control__mark__radio"></span>
-                      Сетевые
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="filters-button page-button" type="submit">Показать</button>
-            </form>
-          </div>
+              </div>
+              <div class="price__selectors">
+                <input class="price__input price__input__min" name="price-from" type="text" value="" placeholder="0"
+                  aria-label="Цена от.">
+                <span> - </span>
+                <input class="price__input price__input__max" name="price-to" type="text" value="" placeholder="30000"
+                  aria-label="Цена до.">
+              </div>
+            </fieldset>
+            <fieldset class="filter__group filter__group__manufacturer">
+              <legend class="filter__title filter__title__manufacturer">Производители</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <label class="control">
+                    <input class="control__input" type="checkbox" name="manufacturer" value="BOSCH" checked>
+                    <span class="control__mark control__mark__checkbox"></span>
+                    BOSCH
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="control">
+                    <input class="control__input" type="checkbox" name="manufacturer" value="ИНТЕРСКОЛ">
+                    <span class="control__mark control__mark__checkbox"></span>
+                    ИНТЕРСКОЛ
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="control">
+                    <input class="control__input" type="checkbox" name="manufacturer" value="MAKIta" checked>
+                    <span class="control__mark control__mark__checkbox"></span>
+                    MAKIta
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="control">
+                    <input class="control__input" type="checkbox" name="manufacturer" value="Dewalt">
+                    <span class="control__mark control__mark__checkbox"></span>
+                    Dewalt
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="control">
+                    <input class="control__input" type="checkbox" name="manufacturer" value="Hitachi">
+                    <span class="control__mark control__mark__checkbox"></span>
+                    Hitachi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__group filter__group__power">
+              <legend class="filter__title filter__title__power">Питание</legend>
+              <ul class="filters__list">
+                <li class="filters__item filters__item__radio">
+                  <label class="control">
+                    <input class="control__input" type="radio" name="power-supply" value="battery" checked>
+                    <span class="control__mark control__mark__radio"></span>
+                    Аккумуляторные
+                  </label>
+                </li>
+                <li class="filters__item filters__item__radio">
+                  <label class="control">
+                    <input class="control__input" type="radio" name="power-supply" value="mains-power">
+                    <span class="control__mark control__mark__radio"></span>
+                    Сетевые
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filters__button" type="submit">Показать</button>
+          </form>
           <div class="products__wrapper">
             <select class="sorting" name="sorting">
               <option value="more-expensive">Сначала дорогие</option>
