@@ -1396,6 +1396,7 @@ body {
   font-size: 36px;
   line-height: 42px;
   max-width: 430px;
+  text-transform: uppercase;
 }
 
 .blocks__container {
