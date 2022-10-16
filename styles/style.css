@@ -125,6 +125,34 @@ body {
   color: #32425c;
 }
 
+.new {
+  position: absolute;
+  overflow: hidden;
+}
+
+.new::after {
+  content: "new";
+  position: absolute;
+  top: 7px;
+  right: -28px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  padding: 17px 17px 14px 17px;
+  transform: rotate(45deg);
+  color: #ffffff;
+  background-color: #ee3643;
+  overflow: hidden;
+}
 
 
 .input {
@@ -1017,6 +1045,7 @@ body {
 /* Баннеры */
 
 .banner {
+  position: relative;
   min-height: 180px;
   display: flex;
   flex-direction: column;
@@ -1678,6 +1707,7 @@ body {
 }
 
 .product {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
