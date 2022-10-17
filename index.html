@@ -26,7 +26,7 @@
             <span class="visually__hidden">Логотип интернет-магазина Техномарт.</span>
           </span>
           <div class="site__searching__container">
-            <button class="site__searching__button" type="button">
+            <button class="site__searching__button" type="button" aria-label="Кнопка поиска.">
               <svg class="search__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -40,19 +40,12 @@
             </form>
           </div>
           <div class="user__account__container">
-            <button class="user__navigation__button user__account__button" type="button"
-              aria-label="Кнопка входа в аккаунт.">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Иконка входа">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z"
-                  fill="currentColor" />
-              </svg>
-              Вход
+            <button class="user__account__button" type="button" aria-label="Кнопка входа в аккаунт.">
+              Войти
             </button>
             <div class="user__account__popup">
               <span class="user__account__title">Личный кабинет</span>
-              <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
+              <form class="site__user__form" action="https://echo.htmlacademy.ru/" method="post">
                 <ul class="user__inputs_list">
                   <li>
                     <!-- При неправильном вводе в поля input добалять класс is__invalid -->
@@ -79,10 +72,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
-
       <div class="header__navigation__wrapper">
         <div class="container">
           <nav class="header__navigation">
@@ -117,7 +107,7 @@
             </ul>
           </nav>
           <div class="cart__container">
-            <button class="user__navigation__button cart__button" type="button" aria-label="Корзина товаров.">
+            <button class="cart__button" type="button" aria-label="Корзина товаров.">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Иконка корзины покупок.">
                 <path fill-rule="evenodd" clip-rule="evenodd"
