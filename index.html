@@ -39,14 +39,13 @@
                 aria-label="Ввод поискового запроса.">
             </form>
           </div>
-          <div class="user__account__container  is__active">
-            <span class="user__name"></span>
+          <div class="user__account__container">
             <button class="user__account__button" type="button" aria-label="Кнопка входа в аккаунт.">
               Войти
             </button>
             <div class="user__account__popup">
               <button class="close__popup__button" type="button"></button>
-              <span class="user__account__title">Личный кабинет</span>
+              <h2 class="user__account__title">Личный кабинет</h2>
               <form class="site__user__form" action="https://echo.htmlacademy.ru/" method="post">
                 <!-- При неправильном вводе в поля input добалять класс is__invalid -->
                 <input class="input user__email" type="text" name="login" placeholder="Логин" required
@@ -66,36 +65,16 @@
               </form>
             </div>
           </div>
-          <div class="user__account__container__logged">
+          <div class="user__account__container__logged is__active">
             <a class="user__profile__link" href="#">Равшан Джамшутович</a>
             <a class="user__account__button__exit" aria-label="Кнопка выхода из аккаунта."></a>
             <div class="user__account__popup">
               <button class="close__popup__button" type="button"></button>
-              <span class="user__account__title">Личный кабинет</span>
-              <form class="site__user__form" action="https://echo.htmlacademy.ru/" method="post">
-                <ul class="user__inputs_list">
-                  <li>
-                    <!-- При неправильном вводе в поля input добалять класс is__invalid -->
-                    <input class="input user__email" type="email" name="email" placeholder="email@example.com" required
-                      aria-label="Введите ваш email.">
-                  </li>
-                  <li>
-                    <input class="input user__password" name="password" type="password"
-                      placeholder="&bull; &bull; &bull; &bull; &bull;" required aria-label="Введите пароль.">
-                  </li>
-                </ul>
-                <button class="additional__button sign__in__button" type="submit">
-                  Войти
-                </button>
-                <ul class="help__links__list">
-                  <li>
-                    <a class="help__link forgot__password" href="#">Забыли пароль?</a>
-                  </li>
-                  <li>
-                    <a class="extra__button registration" href="#">Регистрация</a>
-                  </li>
-                </ul>
-              </form>
+              <h2 class="user__account__title is__logged">Здравствуйте,
+                Равшан&nbsp;Джамшутович</h2>
+              <a class="user__orders" href="#">Мои заказы</a>
+              <a class="user__page" href="#">Личный кабинет</a>
+              <a class="extra__button logout__button" href="#">Выйти</a>
             </div>
           </div>
         </div>

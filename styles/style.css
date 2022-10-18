@@ -425,7 +425,8 @@ body {
 .user__profile__link {
   display: flex;
   flex-wrap: wrap;
-  width: 190px;
+  max-width: 190px;
+  margin-right: 7px;
   padding: 0 0 0 24px;
   text-decoration: none;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -439,7 +440,7 @@ body {
 }
 
 .user__account__container:focus-within .user__account__popup,
-.user__account__container:hover .user__account__popup {
+.user__account__container__logged:focus-within .user__account__popup {
   display: flex;
 }
 
@@ -462,6 +463,14 @@ body {
   cursor: pointer;
 }
 
+.user__account__button:active+.user__account__popup {
+  display: flex;
+}
+
+.user__profile__link:active+.user__account__popup {
+  display: flex;
+}
+
 .user__account__button__exit {
   width: 16px;
   height: 16px;
@@ -480,6 +489,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.user__account__button:hover,
+.user__account__button__exit:hover,
+.user__profile__link:hover {
+  opacity: 0.6;
+}
+
+.user__account__button:active,
+.user__account__button__exit:active,
+.user__profile__link:active {
+  opacity: 0.3;
 }
 
 .user__account__popup {
@@ -520,13 +541,17 @@ body {
 }
 
 .user__account__title {
-  max-width: 260px;
+  max-width: 276px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
   margin: 0 0 43px;
   text-transform: uppercase;
+}
+
+.user__account__title.is__logged {
+  margin: 0 0 26px;
 }
 
 .site__user__form {
@@ -579,6 +604,34 @@ body {
 .registration__button {
   min-height: 40px;
   max-width: 145px;
+}
+
+.user__orders,
+.user__page {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: #3d546f;
+  max-width: 200px;
+}
+
+.user__orders {
+  margin-bottom: 23px;
+}
+
+.user__page {
+  margin-bottom: 24px;
+}
+
+.logout__button {
+  max-width: 145px;
+  min-height: 40px;
 }
 
 
