@@ -40,7 +40,7 @@
             </form>
           </div>
           <!-- Для отображения/скрытия незалогиненного (user__account__container) или залогиненного (logged__account__wrapper) добавлять/убирать класс is__active -->
-          <div class="user__account__container">
+          <div class="user__account__container is__active">
             <button class="user__account__button" type="button" aria-label="Кнопка входа в аккаунт.">
               Войти
             </button>
@@ -51,8 +51,10 @@
                 <!-- При неправильном вводе в поля input добалять класс is__invalid -->
                 <input class="input user__email" type="text" name="login" placeholder="Логин" required
                   aria-label="Введите ваш логин.">
+                <span class="error__text">Вы ввели неправильный логин</span>
                 <input class="input user__password" name="password" type="password" placeholder="Пароль" required
                   aria-label="Введите пароль.">
+                <span class="error__text">Вы ввели неправильный пароль</span>
                 <label class="control user__account__control">
                   <input class="control__input remember__me" type="checkbox" name="remember-me" checked>
                   <span class="control__mark control__mark__checkbox"></span>
@@ -66,7 +68,7 @@
               </form>
             </div>
           </div>
-          <div class="logged__account__wrapper  is__active">
+          <div class="logged__account__wrapper">
             <div class="user__account__container__logged">
               <a class="user__profile__link" href="#">Равшан Джамшутович</a>
               <div class="user__account__popup user__account__popup__logged">
@@ -222,35 +224,35 @@
                   <label class="control">
                     <input class="control__input" type="checkbox" name="manufacturer" value="BOSCH" checked>
                     <span class="control__mark control__mark__checkbox"></span>
-                    BOSCH
+                    <span class="control__label">BOSCH</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="control">
                     <input class="control__input" type="checkbox" name="manufacturer" value="ИНТЕРСКОЛ">
                     <span class="control__mark control__mark__checkbox"></span>
-                    ИНТЕРСКОЛ
+                    <span class="control__label">ИНТЕРСКОЛ</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="control">
                     <input class="control__input" type="checkbox" name="manufacturer" value="MAKIta" checked>
                     <span class="control__mark control__mark__checkbox"></span>
-                    MAKIta
+                    <span class="control__label">MAKIta</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="control">
                     <input class="control__input" type="checkbox" name="manufacturer" value="Dewalt">
                     <span class="control__mark control__mark__checkbox"></span>
-                    Dewalt
+                    <span class="control__label">Dewalt</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="control">
                     <input class="control__input" type="checkbox" name="manufacturer" value="Hitachi">
                     <span class="control__mark control__mark__checkbox"></span>
-                    Hitachi
+                    <span class="control__label">Hitachi</span>
                   </label>
                 </li>
               </ul>
@@ -262,14 +264,14 @@
                   <label class="control">
                     <input class="control__input" type="radio" name="power-supply" value="battery" checked>
                     <span class="control__mark control__mark__radio"></span>
-                    Аккумуляторные
+                    <span class="control__label">Аккумуляторные</span>
                   </label>
                 </li>
                 <li class="filters__item filters__item__radio">
                   <label class="control">
                     <input class="control__input" type="radio" name="power-supply" value="mains-power">
                     <span class="control__mark control__mark__radio"></span>
-                    Сетевые
+                    <span class="control__label">Сетевые</span>
                   </label>
                 </li>
               </ul>

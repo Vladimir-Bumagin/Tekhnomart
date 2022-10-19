@@ -220,7 +220,7 @@ body {
 }
 
 .input:hover.is__invalid {
-  border: 2px solid #ea5454;
+  box-shadow: 0 0 0 2px #ea5454;
 }
 
 .input:disabled {
@@ -243,6 +243,19 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #c5c5c5;
+}
+
+.error__text {
+  max-width: 200px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ba2732;
+  display: none;
+  margin-bottom: 7px;
+}
+
+.input.is__invalid+.error__text {
+  display: block;
 }
 
 /* Стили Хедера */
@@ -371,6 +384,10 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.site__searching__button:hover .search__text {
+  opacity: 0.6;
 }
 
 .site__searching__form {
@@ -1677,26 +1694,31 @@ body {
   padding-left: 36px;
 }
 
-/* .control-input:hover~span {
+.control__input:hover+.control__mark {
   opacity: 0.6;
 }
 
-.control-input:active~span {
-  opacity: 0.3;
-}
-
-.control-input:focus {
+.control__input:focus {
   outline: none;
 }
 
-.control-input:focus+.control-mark::before {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
+.control__input:focus+.control__mark {
+  outline: 1px solid #000000;
 }
 
-.control-input:disabled~span {
-  opacity: 0.1;
-} */
+.control__input:disabled {
+  pointer-events: none;
+}
+
+.control__input:disabled+.control__mark {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.control__input:disabled~.control__label {
+  opacity: 0.4;
+  pointer-events: none;
+}
 
 .control__mark {
   position: absolute;
@@ -1766,6 +1788,14 @@ body {
   border: 2px solid #3d546f;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.filters__button:hover {
+  opacity: 0.6;
+}
+
+.filters__button:focus {
+  outline: 1px solid #000000;
 }
 
 .products__wrapper {
