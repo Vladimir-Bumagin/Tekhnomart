@@ -873,12 +873,13 @@ body {
 
 .page__footer {
   margin-top: auto;
-  padding: 44px 14px 24px 4px;
-  display: grid;
-  align-items: start;
-  grid-template-columns: 190px 1fr 193px;
-  column-gap: 200px;
-  row-gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__footer {
+  background-color: #32425c;
+  color: #f3f7f9;
 }
 
 .footer__catalog {
