@@ -274,7 +274,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 13px 0 13px 2px;
+  padding: 13px 0 14px 2px;
 }
 
 .page__title {
@@ -365,17 +365,24 @@ body {
 
 .site__searching__button {
   position: relative;
-  width: 103px;
+  max-width: 150px;
   border: none;
   z-index: 1;
   cursor: pointer;
   background-color: transparent;
-  padding: 0 0 0 7px;
+  padding: 0 0 0 29px;
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.search__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  max-width: 150px;
 }
 
 .site__searching__button .search__icon {
@@ -496,6 +503,7 @@ body {
 }
 
 .user__account__button {
+  max-width: 180px;
   background-color: transparent;
   border: none;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -719,6 +727,7 @@ body {
 
 .header__navigation__item {
   position: relative;
+  max-width: 200px;
 }
 
 .header__navigation__link {
@@ -871,7 +880,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 12px;
+  padding: 12px 0;
 }
 
 .bookmarks {
@@ -1185,8 +1194,8 @@ body {
   min-height: 180px;
   display: flex;
   flex-direction: column;
-  padding: 21px 95px 33px 25px;
-  background-position: right 14% top 50%;
+  padding: 21px 130px 33px 25px;
+  background-position: right 14% top 56px;
   background-repeat: no-repeat;
   border-radius: 2px;
 }
@@ -1217,7 +1226,8 @@ body {
 }
 
 .banner__title {
-  padding: 0;
+  max-width: 130px;
+  padding: 0 0 20px 0;
   margin: 0 0 auto;
   font-weight: 700;
   font-size: 24px;
@@ -1228,10 +1238,9 @@ body {
 
 .banner__button {
   width: 180px;
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -1243,7 +1252,7 @@ body {
   border-radius: 2px;
   background-color: transparent;
   color: #ffffff;
-  padding: 12px 1px 10px 33px;
+  padding: 10px 1px 10px 32px;
   cursor: pointer;
   background-image: url("../images/icons/right-arrow.svg");
   background-repeat: no-repeat;
@@ -1287,6 +1296,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 100%;
 }
 
 .slide.drills {
@@ -1298,7 +1308,8 @@ body {
 }
 
 .slide.is__active {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .slide__title {
@@ -1315,13 +1326,17 @@ body {
 
 .slide__subtitle {
   padding: 0;
-  margin: 0 0 168px;
+  margin: 0 0 12px;
   max-width: 417px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: #ffffff;
+}
+
+.open__catalog__button {
+  margin-top: auto;
 }
 
 .slider__toggles {
@@ -1822,6 +1837,7 @@ body {
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
   align-self: start;
+  background-color: #ffffff;
 }
 
 .sorting:hover {
