@@ -1044,6 +1044,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   margin: 0;
+  max-width: 400px;
 }
 
 .html__academy__email {
@@ -1070,6 +1071,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   margin: 0 0 2px 0;
+  max-width: 400px;
 }
 
 .newsletter__form {
@@ -1226,7 +1228,7 @@ body {
 }
 
 .banner__title {
-  max-width: 130px;
+  max-width: 170px;
   padding: 0 0 20px 0;
   margin: 0 0 auto;
   font-weight: 700;
@@ -1296,7 +1298,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100%;
+  min-height: 390px;
 }
 
 .slide.drills {
@@ -1342,7 +1344,7 @@ body {
 .slider__toggles {
   position: absolute;
   top: 50%;
-  transform: translateY(-47%);
+  transform: translateY(-43%);
   left: 20px;
   display: flex;
   justify-content: space-between;
@@ -1563,7 +1565,7 @@ body {
 }
 
 .filter__group__power {
-  margin-bottom: 45px;
+  margin-bottom: 49px;
 }
 
 .filter__title {
@@ -1799,7 +1801,7 @@ body {
   letter-spacing: 2px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 11px 13px 11px 11px;
+  padding: 10px 13px 8px 11px;
   border: 2px solid #3d546f;
   border-radius: 2px;
   cursor: pointer;
@@ -1823,7 +1825,7 @@ body {
 .sorting {
   width: 280px;
   border: 1px solid #3d546f;
-  padding: 6px 20px 6px 16px;
+  padding: 6px 20px 8px 16px;
   border-radius: 2px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -1961,7 +1963,6 @@ body {
   text-decoration: none;
   color: #ffffff;
   transform: translateX(-10px);
-  margin-top: auto;
 }
 
 .product__price__actual::after {
@@ -2092,6 +2093,7 @@ body {
 
 .contacts__map {
   display: flex;
+  background-color: #fef8f1;
 }
 
 .contacts__map:hover .contacts__image {
